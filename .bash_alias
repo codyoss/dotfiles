@@ -1,0 +1,14 @@
+## General
+alias ll='ls -lah'
+alias gcurl='curl --header "Authorization: Bearer $(gcloud auth print-identity-token)"'
+
+## Git stuff
+alias git-fetch='git checkout main && git remote -v | grep upstream && git fetch origin --prune && git fetch upstream --prune && git rebase upstream/main && git push origin main && git push origin main --tags'
+alias git-clean='git branch | grep -v "main" | xargs git branch -D'
+alias gcm='git checkout main'
+alias gc='git checkout'
+alias gcb='git checkout -b'
+alias gbcat='git branch | cat'
+alias eprof='code ~/.bash_profile'
+alias rprof='source ~/.bash_profile'
+alias grH='git add -A && git reset --hard'

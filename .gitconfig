@@ -1,0 +1,7 @@
+[push]
+	autoSetupRemote = true
+[user]
+	name = Cody Oss
+	email = the.cody.oss@gmail.com
+[pull]
+	rebase = false
